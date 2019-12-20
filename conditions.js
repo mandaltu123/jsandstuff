@@ -111,3 +111,19 @@ for (var i = 0; i < myarray.length; i++) {
     if (typeof myarray[i] !== 'string') break
     console.log(myarray[i])
 }
+
+// reverse a string
+var name = "james bond"
+
+function reverse(input) {
+    var temp = input.split("")
+    var reversed = ''
+    console.log(temp)
+    for (var i = temp.length -1 ; i >= 0; i--) {
+        reversed = reversed + temp[i]
+    }
+    return reversed
+}
+
+var test = reverse(name)
+console.log(name + ' is reversed as ' + test)
