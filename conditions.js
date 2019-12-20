@@ -52,14 +52,48 @@ var job = "teacher"
 
 switch (job) {
     case "teacher":
-        console.log("teaches kids how to code");
-        break;
+        console.log("teaches kids how to code")
+        break
     case "dirver":
-        console.log("drives uber in lisbon");
-        break;
+        console.log("drives uber in lisbon")
+        break
     case "designer":
         console.log("designs fancy dress")
-        break;
+        break
     default:
         console.log("John does something else")
 }
+
+var firstName = "John"
+var age = 20
+// switch true, or while true need to be very careful about the loop exit case
+switch(true) {
+    case age > 30:
+        console.log("Yeah probably need to be serious about health")
+        break
+    case age > 25:
+        console.log("Yeah probably be serious about career")
+        break
+    case age === 20:
+        console.log("very confusing time")
+        break
+    default:
+        console.log("whatever man")
+}
+/**
+ * Truthy and Falsey valuese and equality check
+ */
+
+ var height;
+ var height = 23
+ if (height || height === 0) {
+     console.log("variable is defined")
+ } else {
+     console.log("variable is not defined")
+ }
+
+ // equality operator
+ if (height == '23') {
+     console.log("the == operator does a type correction0")
+ }
+ 
