@@ -97,3 +97,17 @@ switch(true) {
      console.log("the == operator does a type correction0")
  }
  
+// break and continue
+var myarray = ["one", "two", "three", 4, "five"]
+
+// exampele of continue
+for (var i = 0; i < myarray.length; i++) {
+    if (typeof myarray[i] !== 'string') continue
+    console.log(myarray[i])
+}
+console.log('----------------------------')
+// example of break
+for (var i = 0; i < myarray.length; i++) {
+    if (typeof myarray[i] !== 'string') break
+    console.log(myarray[i])
+}
