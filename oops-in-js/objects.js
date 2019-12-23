@@ -37,6 +37,9 @@ class Animal {
         };
     }
 }
+// add one property to Animal which will be inheritted by all the animals 
+Animal.prototype.numberOfLegs = 4;
+
 
 // instantiate 3 animals 
  var dogmatix = new Animal("dogmatix", "bones", "black & white", 2015);
@@ -50,3 +53,5 @@ class Animal {
  console.log(dogmatix);
  console.log(puss);
  console.log(milo);
+ console.log("here are the number of legs: dogmatix: "  + dogmatix.numberOfLegs + " & puss: " + puss.numberOfLegs + " & milo:  " + milo.numberOfLegs
+ )
