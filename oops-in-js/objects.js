@@ -1,6 +1,13 @@
 /**
  * In javascript, other than primitve datatypes everything else are Objecets.
- * This is an example of creating objects using constructor
+ * This is an example of creating objects using constructor.
+ * 
+ * 1.   Every javascript object has a prototype property, which makes inheritance possible in javascript.
+ * 2.   The prototype property of an object is where we put methods and properties that we want other objects to inherit.
+ * 3.   The constructor's prototype property is not the prototype of the constructor itself, it's the prototype of all instances that
+ *  created through it.
+ * 4.   When a certain method (or property) is called, the search starts in the object itself, and if it can not be found, the search moves 
+ * on the object's prototype. This continues untill the method is found- this is called prototype chaining.
  */
 
  var john = {
