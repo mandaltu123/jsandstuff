@@ -18,10 +18,19 @@ function driverLicense(passedTest) {
     }
     console.log(firstName + ' and ' + yearOfBirth);
     console.log(y);
-    console.log(x); // This will throw error ReferenceError: x is not defined.
+    //   console.log(x); // This will throw error ReferenceError: x is not defined.
     // The reason it throws error is that let and consts are block scoped.
     // since we are trying to access outside of if block, hence it is not defined
     // however good old vars work like a charm as they used to be function scoped.
 }
 
 driverLicense(true);
+// another example
+
+let i = 100;
+
+for (let i = 0; i < 3; i++) {
+    console.log(i);
+}
+console.log(i);
+// if we had used var i instead of let i, the last console.log(i) will retain value 2.
