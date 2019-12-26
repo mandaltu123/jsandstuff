@@ -3,16 +3,16 @@ function interviewQuestion(job) {
     const b = ', what subject do you teach ?';
     const c = ', what do you do for a living ?';
 
-    if(job === 'teacher') {
-        return function(name) {
+    if (job === 'teacher') {
+        return function (name) {
             console.log(name + b);
         }
     } else if (job === 'designer') {
-        return function(name) {
+        return function (name) {
             console.log(name + a);
         }
     } else {
-        return function(name) {
+        return function (name) {
             console.log(name + c);
         }
     }
