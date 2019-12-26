@@ -1,7 +1,7 @@
 const name = 'tuhin';// constant, that means we wont be able to change the value
 let age = 10;
-console.log(name)
-console.log(age)
+console.log(name);
+console.log(age);
 age += 1;
 console.log(age);
 
