@@ -1,4 +1,7 @@
 /**
+ * In with-callback.js file we have seen how quickly the nested async calls becomes hell and very quickly it becomes
+ * so unmanageable. To avoid this there is promises and we can chain them to achieve what we did using nesting of
+ * async calls.
  * -----------                          -----------------------
  * | pending |  -----event happens ---> | settled/resolved    |
  * -----------                          -----------------------
